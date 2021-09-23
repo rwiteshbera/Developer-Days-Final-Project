@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+  <title>Hello, world!</title>
+</head>
+
+<body>
+  <h2 id="login" style="text-align: center">
+    <div class="container">
+      <p class="h2">Top News</p>
+      <hr>
+      <div class="accordion accordion-flush fs-6" id="newsAccordion">
+      </div>
+    </div>
+  </h2>
+
+
+
+  <!-- Bootstrap JS  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+
+
+  <!-- Sawo Authentication  -->
+  <script>
+    // Fetching payload from sessionStorage
+    const payload = sessionStorage.getItem("payload");
+    // Checking if the payload is available or not
+    if (payload) {
+      // If the payload is available then console.log the payload
+      console.log("Payload : " + payload);
+    } else {
+      // If the payload isn't available, that means the user hasn't logged in yet.
+      // So redirecting back to "/login"
+      window.location.href = "/";
+    }
+  </script>
+</body>
+<script src="../js/script.js"></script>
+
+</html>
