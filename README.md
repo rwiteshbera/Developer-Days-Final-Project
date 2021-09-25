@@ -5,7 +5,7 @@
 
 - Project Description: FindMeal is a web application that allows users to search for meals by ingredients. Users can find recipes and watch videos of the meal.
 
-- Technologies Used: HTML, CSS, JavaScript, Express.Js, MongoDB
+- Technologies Used: HTML, CSS, JavaScript, Express.Js, MongoDB, Mongoose
 
 - Added Features: SAWO Lab Authentication
 
