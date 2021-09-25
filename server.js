@@ -11,8 +11,10 @@ const htmlPath = __dirname + "/public/html";
 app.use(express.static(staticPath));
 app.use(express.static(htmlPath));
 
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+
 
 app.get("/", (req, res) => {
     res.sendFile(__dirname + "/public/index.html");
@@ -26,6 +28,7 @@ app.get("/contact", (req, res) => {
     res.sendFile(__dirname + "/public/html/contact.html");
 });
 
+
 app.post("/contact", async (req, res) => {
     try {
         const contactData = new register({
@@ -34,8 +37,7 @@ app.post("/contact", async (req, res) => {
             message: req.body.message
         })
         const data = await contactData.save();
-        console.log(data);
-        res.status(201).render("contact");
+        res.redirect("/contact");
     }
     catch (err) {
         res.send(err);
