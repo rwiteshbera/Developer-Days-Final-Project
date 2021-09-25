@@ -10,12 +10,12 @@
 
 
 - How it works:
-  1. The link will redirect to login page (powered by SAWO Lab).
-  2. Login by using name and email. OTP will be sent to the email.
-  3. After successful login, user will be redirected to the home page.
-  4. In homepage, user can search their meal in the search bar.
-  5. The meal data is fetched from a third party API - [TheMealDB](https://www.themealdb.com/api.php). 
-  6. There is a contact page, wher user can send message to developer. The message will be stored in MongoDB database in local machine. (MonogDB must be working locally)
+1. The link will redirect to the login page (powered by SAWO Lab).
+2. Login by using your name and email. OTP will be sent to the email.
+3. After successful login, the user will be redirected to the home page.
+4. On the homepage, users can search for their meal in the search bar.
+5. The meal data is fetched from a third party API - [TheMealDB](https://www.themealdb.com/api.php)
+6. There is a contact page, where users can send messages to developers. The message will be stored in the MongoDB databasee.
 
 #### Screenshot:
 ![Screenshot](./images/screenshotHome.png)
