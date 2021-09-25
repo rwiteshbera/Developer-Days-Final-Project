@@ -16,6 +16,6 @@ const contactSchema = new mongoose.Schema({
 });
 
 
-const register = new mongoose.model('register', contactSchema); // Collection name is register
+const register = new mongoose.model('contact', contactSchema); // Collection name is register
 module.exports = register;
 

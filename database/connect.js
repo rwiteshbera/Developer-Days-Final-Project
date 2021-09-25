@@ -1,8 +1,10 @@
 const mongoose = require('mongoose');
 
-mongoose.connect("mongodb://localhost:27017/findmeal", {
+mongoose.connect("mongodb+srv://rwitesh:findmealrwitesh@contact.nssqw.mongodb.net/findmeal?retryWrites=true&w=majority", {
     useNewUrlParser: true,
-    useUnifiedTopology: true
+    // useCreateIndex: true,
+    useUnifiedTopology: true,
+    // usefindAndModify: false
 }).then(() => {
     console.log("Connected to MonogDB.");
 }).catch(err => {
