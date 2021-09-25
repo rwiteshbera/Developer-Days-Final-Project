@@ -37,7 +37,7 @@ app.post("/contact", async (req, res) => {
             message: req.body.message
         })
         const data = await contactData.save();
-        res.redirect("/contact");
+        res.send("Message submitted successfully.");
     }
     catch (err) {
         res.send(err);
