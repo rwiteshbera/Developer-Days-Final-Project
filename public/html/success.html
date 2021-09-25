@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/home.css">
+  <link rel="shortcut icon" href="../images/icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>FindMeal</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="meal-wrapper">
+      <div class="navClass">
+        <ul class="categories">
+          <a class="list" href="">
+            <li>Home</li>
+          </a>
+          <a class="list" href="../html/contact.html" target="_blank">
+            <li>Contact Us</li>
+          </a>
+          <a id="username"></a>
+          <a  class="list" href="" id="logout"></a>
+        </ul>
+      </div>
+      <div class="meal-search">
+        <h2 class="heading"></h2>
+        <blockquote>“One cannot think well, love well, sleep well, if one has not dined well.”</blockquote>
+        <cite>- Virginia Woolf</cite>
+        </blockquote>
+
+        <div class="meal-search-box">
+          <input type="text" name="" class="search-control" placeholder="Enter an ingredient" id="search-input">
+
+          <button type="submit" class="search-btn btn" id="search-btn"><i class="fa fa-search"></i></button>
+        </div>
+      </div>
+
+      <div class="meal-result">
+        <h2 class="title">Your Search Results:</h2>
+        <div id="meal">
+          <!-- meal item  -->
+          <!-- <div class="meal-item">
+              <div class="meal-img">
+                <img src="../images/potato-chips.jpg" alt="" srcset="">
+              </div>
+              <div class="meal-name">
+                <h3>Potato Chips</h3>
+                <a href="#" class="recipe-btn">Get Recipe</a>
+              </div>
+            </div> -->
+          <!-- meal item end -->
+        </div>
+      </div>
+
+      <div class="meal-details">
+        <!-- Recipe Close  -->
+        <button type="button" class="btn recipe-close-btn" id="recipe-close-btn">
+          <i class="fas fa-times">Close</i>
+        </button>
+
+        <!-- Meal Content  -->
+        <div class="meal-details-content">
+          <!-- <h2 class="recipe-title">Meals Name Here</h2>
+            <p class="recipe-category">Category Name</p>
+            <div class="recipe-instruct">
+              <h3>Instructions</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam laborum, repellendus quaerat magni, exercitationem laudantium, doloremque quibusdam consectetur cupiditate excepturi voluptatem officia veniam! Laboriosam natus corporis impedit, voluptatem quod suscipit. Dicta vel aliquid velit eaque numquam, repudiandae debitis pariatur voluptatum mollitia omnis porro ipsam dignissimos quae deserunt similique, dolorem facilis.</p>
+
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, labore. Vitae dolores, alias eum commodi, odit facere ducimus ex impedit repudiandae ea tempore suscipit, excepturi distinctio atque accusantium optio ipsum dicta nesciunt doloremque rem assumenda autem aspernatur maxime consequatur! Praesentium?</p>
+            </div>
+
+            <div class="recipe-meal-img">
+              <img src="../images/potato-chips.jpg" alt="" srcset="">
+            </div>
+
+            <div class="recipe-link">
+              <a href="#" target="_blank">Watch Videos</a>
+            </div> -->
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Sawo Authentication  -->
+  <script>
+    // Fetching payload from sessionStorage
+    const payload = sessionStorage.getItem("payload");
+    // Checking if the payload is available or not
+    if (payload) {
+      // If the payload is available then console.log the payload
+      console.log("Payload : " + payload);
+    } else {
+      // If the payload isn't available, that means the user hasn't logged in yet.
+      // So redirecting back to "/login"
+      window.location.href = "/";
+    }
+  </script>
+</body>
+<script src="../js/home.js"></script>
+
+</html>
