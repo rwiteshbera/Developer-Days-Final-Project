@@ -1,8 +1,9 @@
 ## Final Project for Developer Days
 #### Project Name: FindMeal
 #### Website Link: [FindMeal](https://findmeal-developer-days.herokuapp.com/)
+#### Demo Video Link: [Youtube](https://youtu.be/cep7e5_XQYo)
 
-- Project Description: FindMeal is a web application that allows users to search for meals by ingredients. User can find recipe and watch video of the meal.
+- Project Description: FindMeal is a web application that allows users to search for meals by ingredients. Users can find recipes and watch video of the meal.
 - 
 - Technologies Used: HTML, CSS, JavaScript, Express.Js, MongoDB
 
